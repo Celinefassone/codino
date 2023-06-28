@@ -10,6 +10,8 @@
   --font-size-lg: calc(var(--body-font-size) * 1.1);
   --font-size-xl: calc(var(--body-font-size) * 1.375);
   --font-size-xxl: calc(var(--body-font-size) * 1.75);
+
+  --color-pink: #ff9898;
 }
 
 html,
@@ -31,7 +33,6 @@ body {
   justify-content: space-between;
   width: 100vw;
   z-index: 999;
-  box-shadow: 0 1px 0px #ff9898;
   align-items: center;
   height: var(--header-height);
   position: fixed;
@@ -53,7 +54,7 @@ body {
 
 .header-name {
   margin-left: 2rem;
-  color: #ff9898;
+  color: var(--color-pink);
   font-family: "Neue Montreal";
   padding: 2rem;
 }
@@ -83,7 +84,6 @@ body {
 .main {
   width: auto;
   height: 100vh;
-  background-image: url("images/garden.jpg");
   display: flex;
   display: flex;
   justify-content: flex-end;
@@ -94,7 +94,7 @@ body {
   display: flex;
   width: 40%;
   height: 60%;
-  color: #ff9898;
+  color: var(--color-pink);
   flex-wrap: wrap;
   align-content: center;
   padding: 40px;
@@ -105,7 +105,7 @@ body {
 .container {
   left: 0px;
   position: absolute;
-  bottom: 80px;
+  bottom: 0px;
   width: 792px;
   height: 541px;
 }
@@ -118,63 +118,28 @@ body {
 
 .container-floor {
   z-index: 2;
-  left: 0px;
-  position: absolute;
-  bottom: 10px;
+  left: -100px;
+  position: absolute !important;
+  top: 450px !important;
 }
 
 .container-houses {
   z-index: 3;
   left: 0px;
-  position: absolute;
-  bottom: 80px;
+  position: absolute !important;
+  top: 90px !important;
+  height: 370px;
 }
 
 .container-boat {
   z-index: 4;
   position: absolute;
-  left: 500px;
-  bottom: 40px;
+  left: 500px !important;
+  top: 300px !important;
 }
 .container-sea {
   z-index: 5;
-  left: 0px;
   position: absolute;
-  bottom: 0px;
-}
-
-/*
-  ********* FOOTER STYLES *********
-*/
-
-.footer-bar {
-  display: flex;
-  width: 100vw;
-  justify-content: space-between;
-  bottom: 0;
-  box-shadow: 0 -1px 0px #ff9898;
-  align-items: center;
-  height: 80px;
-  position: fixed;
-  bottom: 0;
-}
-
-.footer-box {
-  display: flex;
-  height: 60px;
-  padding: 2rem;
-  align-items: center;
-}
-
-.footer-text {
-  color: #ff9898;
-  font-family: "Neue Montreal";
-  font-size: 20px;
-}
-
-.footer-icon {
-  width: 80%;
-  object-fit: cover;
-  height: 80%;
-  padding-top: 5px;
+  top: 450px !important;
+  height: 120px;
 }

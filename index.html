@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Celine Fassone</title>
+    <title>Codini</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   </head>
 
   <body>
@@ -28,29 +30,21 @@
         AND CONSEQUENTLY I LOVE PIZZA. I ALSO LOVE ART, VIDEOGAMES, CHOCOLATE,
         CATS AND LITERATURE.
       </div>
-      <div class="container">
-        <img class="container-background" src="images/background.svg" />
-        <img class="container-floor" src="images/floor.svg" />
-        <img class="container-houses" src="images/houses.svg" />
-        <img class="container-boat" src="images/boat.svg" />
-        <img class="container-sea" src="images/sea.svg" />
+      <div class="container" id="scene">
+        <img
+          class="container-background"
+          src="images/background.svg"
+          data-depth="0.0"
+        />
+        <img class="container-floor" src="images/floor.svg" data-depth="0.2" />
+        <img
+          class="container-houses"
+          src="images/houses.svg"
+          data-depth="0.4"
+        />
+        <img class="container-boat" src="images/boat.svg" data-depth="0.6" />
+        <img class="container-sea" src="images/sea.svg" data-depth="0.8" />
       </div>
     </main>
-
-    <footer class="footer-bar">
-      <div class="footer-box">
-        <p class="footer-text">Contact me!</p>
-      </div>
-
-      <div class="footer-box">
-        <img class="footer-icon" src="images/icons8-home.svg" />
-        <p class="footer-text">Amsterdam</p>
-      </div>
-
-      <div class="footer-box">
-        <img class="footer-icon" src="images/icons8-mail.svg" />
-        <p class="footer-text">celly5401@gmail.com</p>
-      </div>
-    </footer>
   </body>
 </html>
