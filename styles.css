@@ -1,6 +1,7 @@
 :root {
   --header-height: 80px;
-  --body-font-size: 16px;
+  --header-height-media: 40px;
+  --body-font-size: 20px;
 
   --font-size-xxs: calc(var(--body-font-size) * 0.4);
   --font-size-xs: calc(var(--body-font-size) * 0.55);
@@ -42,38 +43,33 @@ body {
 .header-logo {
   align-items: center;
   display: flex;
-  padding: 2rem;
-  justify-content: space-between;
+  padding: 20px;
 }
 
 .header-logo-img {
   object-fit: cover;
-  height: 50px;
-  width: 50px;
+  height: 70%;
+  width: 4%;
 }
 
 .header-name {
   margin-left: 2rem;
   color: var(--color-pink);
   font-family: "Neue Montreal";
-  padding: 2rem;
-}
-
-@media (min-width: 768px) {
-  .header-name {
-    font-size: var(--font-size-xl);
-  }
 }
 
 .header-link {
-  height: 60px;
-  padding: 2rem;
+  object-fit: cover;
+  display: flex;
+  height: 70%;
+  cursor: pointer;
+  padding: 20px;
 }
 
-.header-link-logo {
-  width: 50px;
+.header-link-img {
   object-fit: cover;
-  height: 50px;
+  display: flex;
+  height: 70%;
   cursor: pointer;
 }
 
@@ -142,4 +138,33 @@ body {
   position: absolute;
   top: 450px !important;
   height: 120px;
+}
+
+/*
+  ********* MEDIA STYLES *********
+*/
+
+@media (max-width: 768px) {
+  .header-bar {
+    height: var(--header-height-media);
+  }
+
+  .header-logo-img,
+  .header-link-logo {
+    height: 70%;
+    width: 5%;
+  }
+
+  .main-content {
+    font-size: 20px;
+    height: 40%;
+    width: 60%;
+  }
+
+  .container-background,
+  .container-floor,
+  .container-houses,
+  .container-sea {
+    width: 50%;
+  }
 }
